@@ -1,5 +1,11 @@
 import Navbar from "@/components/localcomp/Navbar"
-import { Outlet } from "react-router-dom"
+
+interface OutletProps {
+  context?: unknown;
+}
+declare function Outlet(
+  props: OutletProps
+): React.ReactElement | null;
 
 const AuthLayout = () => {
 
