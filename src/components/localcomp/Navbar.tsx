@@ -12,16 +12,16 @@ const Navbar = () => {
                     task.io
                 </Link>
                 <div className="md:flex md:gap-8 lg:gap-10 hidden">
-                    <Link>
+                    <Link  to="#">
                         About
                     </Link>
-                    <Link>
+                    <Link to="#">
                         Features
                     </Link>
-                    <Link>
+                    <Link to="#">
                         Blog
                     </Link>
-                    <Link>
+                    <Link to="#">
                         Pricing
                     </Link>
 
