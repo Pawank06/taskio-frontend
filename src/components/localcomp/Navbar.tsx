@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
                 </div>
                 <div className="flex gap-2">
-                    <Link to="/login">
+                    <Link to="/auth/login">
                         <Button variant="link">
                             Login
                         </Button>
