@@ -60,7 +60,7 @@ const Features = () => {
   ];
   return (
     <div className="text-center mt-24 ">
-      <h1 className="font-semibold text-xl md:text-4xl">Features</h1>
+      <h1 className="font-semibold text-xl md:text-4xl lg:7xl">Features</h1>
       <p className="text-xs mt-2 px-4 md:mt-4 opacity-60 md:text-lg lg:text-xl mb-6">This project is an experiment aimed at implementing CRUD operations, enriched <br className="lg:block hidden" /> with features like  authentication, subscriptions, and API routes, all within the MERN stack.
       </p>
       <div className="grid gap-4 md:grid-cols-3 mx-4 lg:max-w-[62rem] lg:mx-auto">
