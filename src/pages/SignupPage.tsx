@@ -1,3 +1,5 @@
+
+
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -9,19 +11,30 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Link } from "react-router-dom"
-const LoginPage = () => {
+
+const SignupPage = () => {
   return (
     <section className="flex items-center justify-center h-screen">
 
-<Card className="mx-auto max-w-sm">
+    <Card className="mx-auto max-w-sm">
       <CardHeader>
-        <CardTitle className="text-2xl">Login</CardTitle>
+        <CardTitle className="text-xl">Sign Up</CardTitle>
         <CardDescription>
-          Enter your email below to login to your account
+          Enter your information to create an account
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid gap-4">
+          
+          <div className="grid gap-2">
+            <Label htmlFor="name">name</Label>
+            <Input
+              id="name"
+              type="email"
+              placeholder="Max"
+              required
+            />
+          </div>
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
             <Input
@@ -32,22 +45,17 @@ const LoginPage = () => {
             />
           </div>
           <div className="grid gap-2">
-            <div className="flex items-center">
-              <Label htmlFor="password">Password</Label>
-            </div>
-            <Input id="password" type="password" required />
+            <Label htmlFor="password">Password</Label>
+            <Input id="password" type="password" />
           </div>
           <Button type="submit" className="w-full">
-            Login
-          </Button>
-          <Button variant="outline" className="w-full">
-            Login with Google
+            Create an account
           </Button>
         </div>
         <div className="mt-4 text-center text-sm">
-          Don&apos;t have an account?{" "}
-          <Link to="/auth/register" className="underline">
-            Sign up
+          Already have an account?{" "}
+          <Link to="/auth/login" className="underline">
+            Sign in
           </Link>
         </div>
       </CardContent>
@@ -56,4 +64,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default SignupPage

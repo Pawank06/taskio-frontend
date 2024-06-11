@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center p-4 lg:px-16">
                 <div className="flex items-center gap-14 opacity-75">
 
-                <Link href="/" className="font-semibold text-2xl">
+                <Link to="/"  className="font-semibold text-2xl">
                     task.io
                 </Link>
                 <div className="md:flex md:gap-8 lg:gap-10 hidden">
@@ -28,14 +28,14 @@ const Navbar = () => {
                 </div>
                 </div>
                 <div className="flex gap-2">
-                    <Link to="/auth/login">
-                        <Button variant="link">
+                    <Link to="/auth/login" >
+                        <Button variant="link" >
                             Login
                         </Button>
 
                     </Link>
 
-                    <Link to="/signup">
+                    <Link to="/auth/register">
 
                         <Button>
                             Sign up
